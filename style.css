@@ -1,0 +1,40 @@
+html, body {
+    margin: 0%;
+    padding: 0%;
+    
+    height: 100vh;
+    width: 100vw;
+}
+html {
+    background-color: black;
+}
+body {
+    background-color: rgb(210, 238, 238);
+
+    display: grid;
+    grid-template: auto 1fr/ minmax(1fr, 7rem) 4fr;
+    grid-template-areas: "Menu Head"
+                         "Menu Cont";
+}
+
+body > * {
+    overflow: auto;
+}
+
+.menu {
+    background-color: antiquewhite;
+
+    grid-area: Menu;
+}
+
+.header {
+    background-color: aquamarine;
+
+    grid-area: Head;
+}
+
+.content {
+    background-color: aqua;
+
+    grid-area: Cont;
+}
