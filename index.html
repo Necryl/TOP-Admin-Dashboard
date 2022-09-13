@@ -4,34 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Admin Dashboard</title>
 </head>
 <body>
     <div class="menu">
-        <h1 class="dashboard">Dashboard</h1>
+        <div class="dash-wrapper">
+            <img src="images/dashboard.svg" alt="dashboard icon" class="dash-icon">
+            <h1 class="dashboard">Dashboard</h1>
+        </div>
         <ul class="menu-pages">
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
+            <li><img src="images/home.svg" alt="Home icon" class="menu-icon">Home</li>
+            <li><img src="images/profile.svg" alt="Profile icon" class="menu-icon">Profile</li>
+            <li><img src="images/messages.svg" alt="Messages icon" class="menu-icon">Messages</li>
+            <li><img src="images/history.svg" alt="History icon" class="menu-icon">History</li>
+            <li><img src="images/tasks.svg" alt="Tasks icon" class="menu-icon">Tasks</li>
+            <li><img src="images/community.svg" alt="Community icon" class="menu-icon">Communities</li>
         </ul>
         <ul class="menu-other">
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
+            <li><img src="images/settings.svg" alt="Settings icon" class="menu-icon">Settings</li>
+            <li><img src="images/support.svg" alt="Support icon" class="menu-icon">Support</li>
+            <li><img src="images/privacy.svg" alt="Privacy icon" class="menu-icon">Privacy</li>
         </ul>
     </div>
     <div class="header">
         <div class="header-top">
             <div class="search-wrapper">
-                <span class="search-icon">S</span>
+                <img src="images/search.svg" alt="search icon" class="search-icon">
                 <input type="search" class="search-bar">
             </div>
-            <button class="notifications">N</button>
+            <button class="notifications"><img src="images/notification.svg" alt="notifications icon" class="notification-icon"></button>
             <button id="profileBtn">
                 <img src="images/profilePicM2.svg" alt="your profile picture">
             </button>
@@ -57,32 +63,44 @@
                 <div class="project-item1">
                     <h1 class="project-item-title">Super duper project</h1>
                     <p class="project-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut temporibus cum ratione perspiciatis labore neque fuga autem. Ratione expedita error numquam tenetur eveniet, rerum maxime ex. Reiciendis ipsum temporibus repellat.</p>
-                    <span class="star"></span><span class="eye"></span><span class="fork"></span>
+                    <img src="images/star.svg" alt="star icon" class="star">
+                    <img src="images/eye.svg" alt="eye icon" class="eye">
+                    <img src="images/fork.svg" alt="fork icon" class="fork">
                 </div>
                 <div class="project-item2">
                     <h1 class="project-item-title">Cool Project</h1>
                     <p class="project-item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus cupiditate exercitationem dolores rem? Laboriosam magni aliquid vitae iste culpa repellendus, architecto id quae fugit nisi molestias qui aperiam magnam esse.</p>
-                    <span class="star"></span><span class="eye"></span><span class="fork"></span>
+                    <img src="images/star.svg" alt="star icon" class="star">
+                    <img src="images/eye.svg" alt="eye icon" class="eye">
+                    <img src="images/fork.svg" alt="fork icon" class="fork">
                 </div>
                 <div class="project-item3">
                     <h1 class="project-item-title">Crazy Impossible App</h1>
                     <p class="project-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui odit nobis cupiditate beatae dignissimos praesentium voluptates debitis porro eligendi error expedita, sapiente officiis eaque? Nulla dolores officiis laboriosam consequatur earum.</p>
-                    <span class="star"></span><span class="eye"></span><span class="fork"></span>
+                    <img src="images/star.svg" alt="star icon" class="star">
+                    <img src="images/eye.svg" alt="eye icon" class="eye">
+                    <img src="images/fork.svg" alt="fork icon" class="fork">
                 </div>
                 <div class="project-item4">
                     <h1 class="project-item-title">Easy Peasy App</h1>
                     <p class="project-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, aliquam nam distinctio quia at perferendis unde, reiciendis nobis ex facilis quidem quod? Nostrum, aspernatur nesciunt harum atque veritatis ducimus officiis?</p>
-                    <span class="star"></span><span class="eye"></span><span class="fork"></span>
+                    <img src="images/star.svg" alt="star icon" class="star">
+                    <img src="images/eye.svg" alt="eye icon" class="eye">
+                    <img src="images/fork.svg" alt="fork icon" class="fork">
                 </div>
                 <div class="project-item5">
                     <h1 class="project-item-title">Ad Blocker</h1>
                     <p class="project-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorem, corrupti non perferendis id amet odit a incidunt, omnis cum est quam quasi facere, placeat ea. Ullam animi tempore harum.</p>
-                    <span class="star"></span><span class="eye"></span><span class="fork"></span>
+                    <img src="images/star.svg" alt="star icon" class="star">
+                    <img src="images/eye.svg" alt="eye icon" class="eye">
+                    <img src="images/fork.svg" alt="fork icon" class="fork">
                 </div>
                 <div class="project-item6">
                     <h1 class="project-item-title">Money Maker</h1>
                     <p class="project-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est natus id magni dolorum modi impedit, unde velit officia pariatur consequatur voluptas libero quidem quibusdam ipsam assumenda molestias, amet quaerat. Quia!</p>
-                    <span class="star"></span><span class="eye"></span><span class="fork"></span>
+                    <img src="images/star.svg" alt="star icon" class="star">
+                    <img src="images/eye.svg" alt="eye icon" class="eye">
+                    <img src="images/fork.svg" alt="fork icon" class="fork">
                 </div>
             </div>
         </div>
