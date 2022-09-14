@@ -117,7 +117,7 @@ body > * {
     grid-template-columns: 1fr auto;
 }
 .header-bottom {
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto minmax(5rem, 1fr);
 }
 .header-bottom>:not(.profile-info), .header-top>:not(.search-bar) {
     justify-self: end;
