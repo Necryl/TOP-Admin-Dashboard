@@ -295,7 +295,10 @@ body > * {
     
     --radiusValue: 0.5rem;
     border-radius: var(--radiusValue);
+    
+    box-shadow: 0.2rem 0.1rem 0.5rem rgba(0, 0, 0, 0.082);
 }
+
 .projects {
     /* background-color: aqua; */
     
