@@ -191,11 +191,12 @@ body > * {
 
     border-radius: 3rem;
     padding-right: 0.5rem;
-    transition: 1000ms;
+    transition: 100ms;
     outline: 0.3rem solid transparent;
     outline-offset: -1px;
 }
 .profileBtn-wrapper:hover {
+    transition: 300ms;
     background-color: var(--greyishBlueCol);
     outline-color: var(--greyishBlueCol);
 }
