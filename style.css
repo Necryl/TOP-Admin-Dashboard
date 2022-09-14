@@ -23,13 +23,17 @@ body {
 
     font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+:root {
+    --blueCol: 24, 148, 219;
+    --greyishBlueCol: rgb(219, 232, 240);
+    --yellowCol: rgb(241, 182, 72);
+}
 body > * {
     padding: min(3rem, 2vw);
 }
 
 .menu {
-    background-color: rgb(24, 148, 219);
+    background-color: rgb(var(--blueCol));
 
     padding-left: 0%;
 
@@ -57,7 +61,7 @@ body > * {
 }
 
 .content {
-    background-color: rgb(219, 232, 240);
+    background-color: var(--greyishBlueCol);
 
     overflow: auto;
 
@@ -138,9 +142,15 @@ body > * {
     border-radius: 3rem;
     outline: none;
     border: none;
-    background-color: rgb(219, 232, 240);
+    background-color: var(--greyishBlueCol);
     padding: 0rem 0.7rem;
     font-size: 1rem;
+    
+    transition: 300ms;
+    outline: 3px solid rgba(0, 0, 0, 0);
+}
+.search-bar:hover, .search-bar:focus {
+    outline-color: rgba(var(--blueCol), 0.4);
 }
 .notifications {
     border: none;
@@ -191,8 +201,11 @@ body > * {
 
     border: none;
     border-radius: 3rem;
-    background-color: rgb(24, 148, 219);
+    background-color: rgb(var(--blueCol));
     color: white;
+}
+.postBtns>*:hover {
+
 }
 
 /* Content */
@@ -226,7 +239,7 @@ body > * {
 }
 .projects-content {
     display: grid;
-    grid-template: auto/repeat(auto-fit, minmax(17rem, 1fr));
+    grid-template: auto/repeat(auto-fill, minmax(25rem, 1fr));
     gap: 25px;
 }
 .projects-content>div { /* items */
@@ -245,11 +258,11 @@ body > * {
 .projects-content>div::before {
     content: '';
     grid-area: B;
-    background-color: rgb(223, 183, 76);
+    background-color: var(--yellowCol);
     
     border-radius: var(--radiusValue) 0rem 0rem var(--radiusValue);
     
-    width: 0.35rem;
+    width: 0.4rem;
     height: 100%;
 }
 .project-item-title {
