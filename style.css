@@ -329,6 +329,9 @@ body > * {
     --yelColor: rgb(252, 191, 78);
     background-color: white;
 }
+.projects-content>div:active {
+    scale: 99%;
+}
 .projects-content>div::before {
     content: '';
     grid-area: B;
